@@ -8,7 +8,9 @@
   <link rel="shortcut icon" href="icons/icon-192x192.png" type="image/x-icon">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="public/style.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- link manifest -->
+  <link rel="manifest" href="manifest.webmanifest">
 
   <title>Budget Tracker</title>
 </head>
@@ -41,17 +43,22 @@
     <canvas id="myChart"></canvas>
   </div>
 
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="db.js"></script>
   <script src="index.js"></script>
-</body>
-<!-- service worker script -->
-<script>
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", () => {
-        navigator.serviceWorker.register("service-worker.js").then(reg => {
-          console.log("We found your service worker file!", reg);
+  <script src="service-worker.js"></script>
+  
+  <!-- service worker script -->
+  <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js").then(reg => {
+            console.log("We found your service worker file!", reg);
+          });
         });
-      });
-    }
-  </script>
+      }
+    </script>
+
+</body>
 </html>
