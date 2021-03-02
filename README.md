@@ -1,22 +1,8 @@
 # budgetTracker
-# Unit 18 PWA Homework: Online/Offline Budget Trackers
-
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
-
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
-
-Offline Functionality:
-
-  * Enter deposits offline
-
-  * Enter expenses offline
-
-When brought back online:
-
-  * Offline entries should be added to tracker.
 
 ## User Story
-AS AN avid traveller
+
+* AS AN avid traveller
 I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
 SO THAT my account balance is accurate when I am traveling
 
@@ -24,40 +10,52 @@ SO THAT my account balance is accurate when I am traveling
 
 Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
 
+### Deployment:
 
-## Acceptance Criteria
-GIVEN a user is on Budget App without an internet connection
-WHEN the user inputs a withdrawal or deposit
-THEN that will be shown on the page, and added to their transaction history when their connection is back online.
+<strong>Live Link:</strong> (https://ancient-mountain-68750.herokuapp.com/)
 
-- - -
+### Usage:
 
-## Commit Early and Often
+<strong> Offline Functionality:</strong> (Enter deposits offline/Enter expenses offline) => When brought back <strong>online:</strong> (Offline entries should be added to tracker)
 
-* One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+### Technologies Used:
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+<ul>
+<li>HTML/CSS</li>
+<li>Javascript</li>
+<li>Service Worker</li>
+<li>Web Manifest</li>
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
+<li>Dependencies:
+<ul>
+    <li>Express</li>
+    <li>Compression</li>
+    <li>Morgan</li>
+    <li>Mongoose</li>
 
-* Follow these guidelines for committing:
+</ul>
+</ul>
 
-  * Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
+### Contribute:
 
-  * Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
+If you would like to contribute to this project, here are the steps to follow:
 
-  * Don't commit half done work, for the sake of your collaborators (and your future self!)
+1. Fork the repository and clone it to your local machine.
+   Create a new branch for the repository, create your changes in that branch.
 
-  * Test your application before you commit to ensure functionality at every step in the development process
+2. Make sure to have all dependencies installed as listed in the package.json file.
 
-* We would like you to have well over 200 commits by graduation, so commit early and often!
+3. Run node server.js on localhost/3000.
 
-* Deploy your application with [Heroku and MongoDB Atlas.](../04-Important/MongoAtlas-Deploy.md)
+4. Once your changes have been made and committed, submit your changes for review by creating a new pull request. If your changes are approved, they will then be merged into the main branch of the head repository.
 
-## Submission on BCS
+5. Congrats! You have now contributed to our project.
+   (for further details on how to contribute (https://github.com/firstcontributions/first-contributions))
 
-* You are required to submit the following:
+### Credits:
 
-  * the URL to the deployed application
+Taylor Ceneviva (@taylorceneviva) | OSU Coding Bootcamp
 
-  * the URL to the Github repository
+### Licesnse 
+
+MIT License
